@@ -60,6 +60,9 @@ public class PlanetasPrinter {
   }
 
   private static String formatTipo(PlanetType tipo) {
+    if (tipo == null) {
+      return "NÃO INFORMADO";
+    }
     switch (tipo) {
       case ROCK:
         return "Rochoso";
